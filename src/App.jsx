@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Category from "./components/Category";
 import Services from "./components/Services";
 import Banner from "./components/Banner";
+import Products from "./components/Products";
 
 import headphone from "./assets/hero/headphone.png";
 
@@ -25,6 +26,7 @@ const App = () => {
       <Category />
       <Services />
       <Banner data={BannerData} />
+      <Products />
     </div>
   );
 };
