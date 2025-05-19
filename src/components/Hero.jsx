@@ -34,7 +34,7 @@ const HeroSlider = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({ popupHandler }) => {
   const settings = {
     dots: false,
     arrows: false,
@@ -65,7 +65,7 @@ const Hero = () => {
                       {data.title2}
                     </h2>
                     <div>
-                      <Button text="Shop By Category" bgColor="bg-primary" textColor="text-white" />
+                      <Button text="Shop By Category" bgColor="bg-primary" textColor="text-white" handler={popupHandler} />
                     </div>
                   </div>
                   {/* img section */}
