@@ -88,15 +88,28 @@ export default Products;
 const ProductCard = ({ ProductData }) => {
   return (
     <div className="mb-10">
-      <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-10 place-items-center">
+      <div className="grid grid-cols-1 place-items-center gap-x-5 gap-y-10 sm:grid-cols-2 md:grid-cols-4">
         {/* card section */}
         {ProductData.map((product) => (
-          <div data-aos="fade-up" data-aos-delay={product.aosDelay} className="group" key={product.id}>
+          <div
+            data-aos="fade-up"
+            data-aos-delay={product.aosDelay}
+            className="group"
+            key={product.id}
+          >
             <div className="relative">
-              <img src={product.img} alt="" className="h-[180px] w-[260px] object-cover rounded-md" />
+              <img
+                src={product.img}
+                alt=""
+                className="h-64 w-64 rounded-md object-cover"
+              />
               {/* hover button */}
-              <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 h-full ">
-                <Button text={"Add to card"} bgColor={"bg-primary"} tetxt={"text-white"} />
+              <div className="absolute left-1/2 top-1/2 hidden h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center text-center duration-200 group-hover:flex group-hover:backdrop-blur-sm">
+                <Button
+                  text={"Add to card"}
+                  bgColor={"bg-primary"}
+                  tetxt={"text-white"}
+                />
               </div>
             </div>
             <div className="leading-7">

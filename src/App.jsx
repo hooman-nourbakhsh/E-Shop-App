@@ -23,7 +23,8 @@ const BannerData = {
   image: headphone,
   title2: "Air Solo Bass",
   title3: "Winter Sale",
-  title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+  title4:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
   bgColor: "#f42c37",
 };
 
@@ -34,7 +35,8 @@ const BannerData2 = {
   image: smartwatch,
   title2: "Smart Solo",
   title3: "Winter Sale",
-  title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
+  title4:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
   bgColor: "#2dcc6f",
 };
 
@@ -56,7 +58,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
+    <div className="overflow-hidden bg-white duration-200 dark:bg-gray-900 dark:text-white">
       <Navbar popupHandler={popupHandler} />
       <Hero popupHandler={popupHandler} />
       <Category />

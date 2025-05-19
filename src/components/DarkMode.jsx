@@ -11,11 +11,14 @@ const DarkMode = () => {
   }, [theme]);
 
   return (
-    <div onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="relative">
+    <div
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      className="relative"
+    >
       <img
         src={LightButton}
         alt="LightButton"
-        className={`w-12 cursor-pointer absolute right-0 z-10 transition-all duration-300 ${theme === "dark" ? "opacity-0" : "opacity-100"}`}
+        className={`absolute right-0 z-10 w-12 cursor-pointer transition-all duration-300 ${theme === "dark" ? "opacity-0" : "opacity-100"}`}
       />
       <img src={DarkButton} alt="DarkButton" className="w-12 cursor-pointer" />
     </div>
