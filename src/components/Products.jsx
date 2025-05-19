@@ -91,7 +91,7 @@ const ProductCard = ({ ProductData }) => {
       <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-10 place-items-center">
         {/* card section */}
         {ProductData.map((product) => (
-          <div className="group" key={product.id}>
+          <div data-aos="fade-up" data-aos-delay={product.aosDelay} className="group" key={product.id}>
             <div className="relative">
               <img src={product.img} alt="" className="h-[180px] w-[260px] object-cover rounded-md" />
               {/* hover button */}
